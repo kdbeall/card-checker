@@ -1,6 +1,7 @@
 
 
 def check(card_number):
+    """Checks if a card number passes Luhn's checksum algorithm"""
     card_length = len(card_number)
     if card_length < 8 or card_length > 19:
         return False
